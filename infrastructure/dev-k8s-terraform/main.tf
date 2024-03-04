@@ -15,7 +15,7 @@ variable "sec-gr-k8s-worker" {
 }
 
 data "aws_vpc" "name" {
-  Default = true
+  default = true
 }
 
 resource "aws_security_group" "petclinic-mutual-sg" {
