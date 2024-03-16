@@ -3,10 +3,10 @@ kind: Service
 metadata:
   annotations:
     kompose.cmd: kompose convert -f docker-compose.yml -o petclinic_chart/templates
-    kompose.version: 1.32.0 (765fde254)
+    kompose.version: 1.31.2 (a92241f79)
   labels:
     io.kompose.service: mysql-server
   name: mysql-server
 spec:
-type: ExternalName
-externalName: petclinic.c695wz5dvco7.us-east-1.rds.amazonaws.com
+  type: ExternalName
+  externalName: petclinic.c695wz5dvco7.us-east-1.rds.amazonaws.com
